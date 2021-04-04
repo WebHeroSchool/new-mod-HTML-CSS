@@ -16,7 +16,7 @@ body {
   position: relative;
   padding: 40px 0;
   padding-left: 44px;
-  font: bold 24px/31px 'pt_serifregular', arial, helvetica, sans-serif;
+  font: 24px/31px 'pt_serifbold', arial, helvetica, sans-serif;
 }
 
 .logo__circle {
@@ -48,6 +48,7 @@ body {
 
 .menu__item {
   padding: 0 13px;
+  font: 18px/21px 'robotomedium', arial, helvetica, sans-serif;
 }
 
 .menu__item:last-child {
@@ -61,4 +62,24 @@ body {
 
 .main-content {
   height: 30%
+}
+
+.main-content__title {
+  font: 66px/87px 'pt_serifbold', arial, helvetica, sans-serif;
+}
+
+.main-content__description {
+  font: 22px/26px 'robotoregular', arial, helvetica, sans-serif;
+}
+
+.main-content__button {
+  font: 18px/21px 'robotoregular', arial, helvetica, sans-serif;
+}
+
+.image-content {
+
+}
+
+.image-content__image {
+
 }
