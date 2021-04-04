@@ -58,7 +58,7 @@ body {
   margin-right: 0;
 }
 
-.menu__item:after {
+.menu__item::after {
   content: '';
   display: block;
   position: absolute;
@@ -67,14 +67,14 @@ body {
   height: 3px;
   background: #0056ec;
   opacity: 0;
-  transition: opacity .5s, width .5s;
+  transition: opacity 0.5s, width 0.5s;
 }
 
 .menu__item:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
-.menu__item_active:after {
+.menu__item_active::after {
   content: '';
   display: block;
   position: absolute;
@@ -84,7 +84,8 @@ body {
   background: #0056ec;
 }
 
-.menu__item:hover:after, .menu__item_active:after {
+.menu__item:hover::after,
+.menu__item_active::after {
   opacity: 1;
   width: 100%;
 }
