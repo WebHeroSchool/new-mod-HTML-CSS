@@ -4,7 +4,7 @@ body {
 
 .wrapper {
   margin: auto;
-  width: 80%;
+  width: 79%;
 }
 
 .header {
@@ -14,8 +14,8 @@ body {
 
 .logo {
   position: relative;
-  padding: 40px 0;
-  padding-left: 44px;
+  padding: 41px 0;
+  padding-left: 38px;
   font: 24px/31px 'pt_serifbold', arial, helvetica, sans-serif;
 }
 
@@ -23,7 +23,7 @@ body {
   position: absolute;
   width: 28px;
   height: 28px;
-  left: 0;
+  left: -6px;
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
@@ -35,7 +35,7 @@ body {
 }
 
 .logo__circle_color_blue {
-  left: 8px;
+  left: 1px;
   top: 56%;
   background: #c8dbfb;
   opacity: 0.7;
@@ -48,7 +48,7 @@ body {
 
 .menu__item {
   position: relative;
-  margin-right: 26px;
+  margin-right: 27px;
   font: 18px/21px 'robotomedium', arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
@@ -90,29 +90,68 @@ body {
   width: 100%;
 }
 
-.main-section {
-  display: flex;
-  justify-content: space-between;
+.main {
+  padding: 202px 63% 52px 0;
+  background: 101% 42% no-repeat url(images/Frame.svg);
+  position: relative;
 }
 
-.main-content {
-  height: 30%
-}
-
-.main-content__title {
+.main__title {
+  margin: 0 0 40px 0;
   font: 66px/87px 'pt_serifbold', arial, helvetica, sans-serif;
 }
 
-.main-content__description {
+.main__title-text_highlight {
+  background: #ecf3ff;
+}
+
+.main__description {
+  margin: 0 0 41px 0;
+  padding-right: 84px;
   font: 22px/26px 'robotoregular', arial, helvetica, sans-serif;
 }
 
-.main-content__button {
+.main__button {
+  display: inline-block;
+  padding: 17px 28px;
+  margin: 0 0 267px 0;
+  color: #fff;
+  background: #0056ec;
+  border-radius: 4px;
+  text-decoration: none;
   font: 18px/21px 'robotoregular', arial, helvetica, sans-serif;
+  transition: all 0.5s ease;
 }
 
-.image-content {
+.main__button:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
 }
 
-.image-content__image {
+.main__circle {
+  display: block;
+  position: absolute;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background: #c8dbfb;
+  opacity: 0.7;
+  left: 50%;
+}
+
+.main__circle::before,
+.main__circle::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background: #c8dbfb;
+  opacity: 0.7;
+  left: -14px;
+}
+
+.main__circle::after {
+  left: 14px;
 }
