@@ -106,14 +106,14 @@ body {
 }
 
 .main__description {
-  margin: 0 0 45px 0;
+  margin: 0 0 43px 0;
   padding-right: 100px;
   font: 22px/26px 'robotoregular', arial, helvetica, sans-serif;
 }
 
 .main__button {
   display: inline-block;
-  padding: 17px 28px;
+  padding: 18px 36px 18px 23px;
   margin: 0 0 270px 0;
   color: #fff;
   background: #0056ec;
