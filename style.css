@@ -41,6 +41,10 @@ body {
   opacity: 0.7;
 }
 
+#checkbox {
+  display: none;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -155,4 +159,235 @@ body {
 
 .main__circle::after {
   left: 12px;
+}
+
+@media (max-width: 1367px) {
+  .wrapper {
+    width: 68.5%;
+  }
+
+  .logo {
+    padding: 40px 0;
+    padding-left: 48px;
+  }
+
+  .logo__circle {
+    left: 4px;
+    top: 49%;
+  }
+
+  .logo__circle_color_blue {
+    top: 55%;
+    left: 12px;
+  }
+
+  .menu__item {
+    margin-right: 1.93vw;
+    padding-top: 8px;
+    font: 1.02vw/1.1vw 'robotomedium', arial, helvetica, sans-serif;
+  }
+
+  .menu__item:last-child {
+    margin-right: 7px;
+  }
+
+  .main {
+    padding: 7.5vw 58% 3.2vw 3px;
+    background: 99% 39% no-repeat url(images/Frame.svg);
+    background-size: 55%;
+  }
+
+  .main__title {
+    margin: 0 0 3vw 0;
+    font: 3.66vw/4.8vw 'pt_serifbold', arial, helvetica, sans-serif;
+  }
+
+  .main__description {
+    padding-right: 1vw;
+    font: 1.34vw/1.5vw 'robotoregular', arial, helvetica, sans-serif;
+  }
+
+  .main__button {
+    padding: 1vw 1.85vw 1.14vw 1.2vw;
+    margin: 0 0 10.8vw 0;
+    font: 1.04vw/1.1vw 'robotoregular', arial, helvetica, sans-serif;
+  }
+}
+
+
+@media (max-width: 1025px) {
+  .wrapper {
+    width: 92%;
+  }
+
+  .logo {
+    padding-left: 49px;
+  }
+
+  .menu__item {
+    margin-right: 2.5vw;
+    font: 1.38vw/2.1vw 'robotomedium', arial, helvetica, sans-serif;
+  }
+
+  .menu__item:last-child {
+    margin-right: 5px;
+  }
+
+  .menu__item_active::after {
+    height: 2px;
+  }
+
+  .main {
+    padding: 10vw 58% 4.5vw 5px;
+  }
+
+  .main__title {
+    margin: 0 0 4vw 0;
+    font: 4.88vw/6.35vw 'pt_serifbold', arial, helvetica, sans-serif;
+  }
+
+  .main__description {
+    font: 1.79vw/2vw 'robotoregular', arial, helvetica, sans-serif;
+  }
+
+  .main__button {
+    padding: 1.6vw 2.4vw 1.6vw 1.7vw;
+    margin: 0 0 14.4vw 0;
+    font: 1.38vw/1.1vw 'robotoregular', arial, helvetica, sans-serif;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+    z-index: 2;
+    padding: 15px 0;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+
+  .logo {
+    padding: 25px 0;
+  }
+
+  .logo__text {
+    display: none;
+  }
+
+  .logo__circle {
+    left: 5px;
+    top: 48%;
+  }
+
+  .logo__circle_color_blue {
+    top: 56%;
+    left: 14px;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .burger-line {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 31px;
+    left: 87vw;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .burger-line > span,
+  .burger-line > span::before,
+  .burger-line > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #0056EC;
+  }
+
+  .burger-line > span::before {
+    content: '';
+    top: -7px;
+  }
+
+  .burger-line > span::after {
+    content: '';
+    top: 7px;
+  }
+
+  #checkbox:checked ~ .burger-line > span {
+    transform: rotate(45deg);
+  }
+
+  #checkbox:checked ~ .burger-line > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #checkbox:checked ~ .burger-line > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #checkbox:checked ~ .menu {
+    visibility: visible;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 90vw;
+    height: 100%;
+  }
+
+  .menu__item {
+    top: 46vw;
+    margin-right: 0;
+    padding-top: 0;
+    font: 8vw/16vw 'robotomedium', arial, helvetica, sans-serif;
+  }
+
+  .menu__item_active::after {
+      opacity: 0;
+  }
+
+  .main {
+    position: relative;
+    z-index: 1;
+    padding: 71.4vw 0 11.5vw 6px;
+    background: 50% 2% no-repeat url(images/Frame.svg);
+    background-size: 83%;
+    text-align: center;
+  }
+
+  .main__title {
+    margin: 0 0 8.3vw 0;
+    font: 8vw/10.45vw 'pt_serifbold', arial, helvetica, sans-serif;
+  }
+
+  .main__description {
+    font: 4.35vw/5.3vw 'robotoregular', arial, helvetica, sans-serif;
+    margin: 0 0 6.8vw 0;
+    padding: 0 11vw;
+  }
+
+  .main__button {
+    padding: 5.2vw 28px 5.5vw 15px;
+    margin: 0;
+    font: 3.76vw/1.1vw 'robotoregular', arial, helvetica, sans-serif;
+  }
+
+  .main__circle {
+    display: none;
+  }
+
 }
